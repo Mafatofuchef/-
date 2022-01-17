@@ -5,6 +5,7 @@ from curses import newwin
 import tkinter as tk
 import tkinter as insert
 import tkinter as party
+from tkinter.ttk import Button
 from turtle import width
 
 #입력창 설정
@@ -12,9 +13,11 @@ from turtle import width
 def window():
     newWindow = tk.Toplevel(root)
     newWindow.title("입력창")
-    labelExample = tk.Label(newWindow, text="test2233",width=40, height=20)
+    labelExample = tk.Label(newWindow, text="",width=40, height=20)
+    button_ins=tk.Button(newWindow, text="GO")
     
     labelExample.pack()
+    button_ins.place(x=200, y=100)
 
 
 
@@ -23,9 +26,11 @@ def window():
 def window2():
     newWindow = tk.Toplevel(root)
     newWindow.title("편성창")
-    labelExample = tk.Label(newWindow, text="test2213",width=40, height=20)
+    labelExample = tk.Label(newWindow, text="",width=40, height=20)
+    button_par=tk.Button(newWindow, text="GO")
 
     labelExample.pack()
+    button_par.place(x=200, y=100)
 
 
 #메인에 대한 값들
