@@ -2,9 +2,13 @@ from cProfile import label
 from cgitb import text
 from ctypes.wintypes import SIZE
 from curses import newwin
+from sqlite3 import Row
+import string
 import tkinter as tk
 import tkinter as insert
 import tkinter as party
+from tkinter import ttk
+from tkinter.tix import COLUMN
 from tkinter.ttk import Button
 from turtle import width
 
@@ -18,7 +22,6 @@ def window():
     
     labelExample.pack()
     button_ins.place(x=200, y=100)
-
 
 
 #편성창 설정
@@ -39,7 +42,7 @@ root =tk.Tk()
 root.title("파티 편집기 v.1")
 root.geometry("800x800")
 root.resizable(False, False)
-Label_vs=tk.Label(root, text="test")
+Label_vs=tk.Label(root, text="화이팅")
 Label_vs.place(x=400,y=400)
 
 
